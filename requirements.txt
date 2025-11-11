@@ -1,4 +1,9 @@
-Flask==2.3.3
-numpy==1.24.3
-gunicorn==20.1.0
-setuptools==65.5.0
+# أنشئ ملف requirements.txt مبسط
+$requirements = @'
+Flask==2.3.2
+numpy==1.21.6
+Werkzeug==2.3.7
+'@
+
+$requirements | Out-File -FilePath "$HOME\Desktop\requirements.txt" -Encoding utf8
+Write-Host "✅ تم إنشاء requirements.txt" -ForegroundColor Green
